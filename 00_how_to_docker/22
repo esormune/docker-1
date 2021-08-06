@@ -1,0 +1,5 @@
+#while creating the swarm for Char, it tells you how to add worker, such as:
+#docker swarm join --token SWMTKN-1-2s08mprorciswur4jjqv2ts4ldltt3jhwyyridaxyntairys1n-238b6if3qnzi2zuwp04kaij3m 192.168.99.102:2377
+#but get the "docker-machine ip Char"
+#and to get the token, use "docker swarm join-token worker -q"
+docker-machine ssh Aiur "docker swarm join --token $(docker swarm join-token worker -q)" $(docker-machine ip Char):2377

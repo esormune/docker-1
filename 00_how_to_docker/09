@@ -1,0 +1,7 @@
+#docker pull debian
+#these commands are only to be executed in the terminal of the debian machine
+#docker run -it debian
+
+apt-get update -y
+apt-get upgrade -y
+apt install git gcc -y 
